@@ -1,3 +1,9 @@
+@media (max-width: 1300px) {
+    .nav-content img {
+        width: 140px;
+    }
+}
+
 @media (max-width: 1000px) {
     .main {
         display: flex;
@@ -10,7 +16,8 @@
         flex-direction: column;
         justify-content: space-around;
         width: 100%;
-        min-height: 100px;
+        min-height: 80px;
+        height: 200px !important;
         color: white;
         z-index: 2;
     }
