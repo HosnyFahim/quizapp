@@ -55,8 +55,16 @@ body {
     justify-content: space-between;
 }
 
-.cursor-pointer:hover {
-    cursor: pointer;
+.cursor-pointer {
+    transition: all 225ms ease-in-out;
+}
+
+.answer-btn {
+    border: 0.1px solid lightgray;
+    background-color: white;
+}
+
+.answer-btn:hover {
     background-color: rgb(228, 232, 232);
 }
 

@@ -71,13 +71,21 @@ function answer(selection) {
         AUDIO_FAIL.play();
     }
 
-    document.getElementById('next-button').disabled = false; // dieser Zeile macht das Button anklickbar, wenn die oberre answer Function ausgeführt wird!
+    document.getElementById('next-button').disabled = false;
+    document.getElementById('button-1').disabled = true; // dieser Zeile macht das Button anklickbar, wenn die oberre answer Function ausgeführt wird!
+    document.getElementById('button-2').disabled = true; // dieser Zeile macht das Button anklickbar, wenn die oberre answer Function ausgeführt wird!
+    document.getElementById('button-3').disabled = true; // dieser Zeile macht das Button anklickbar, wenn die oberre answer Function ausgeführt wird!
+    document.getElementById('button-4').disabled = true; // dieser Zeile macht das Button anklickbar, wenn die oberre answer Function ausgeführt wird!
 }
 
 
 function nextQuestion() {
     currentQuestion++; // Variable wird um 1 erhöht. In diesem Fall von 0 auf 1.
     document.getElementById('next-button').disabled = true; // dieser Zeile macht das Button wieder unanklickbar.
+    document.getElementById('button-1').disabled = false; // dieser Zeile macht das Button anklickbar, wenn die oberre answer Function ausgeführt wird!
+    document.getElementById('button-2').disabled = false; // dieser Zeile macht das Button anklickbar, wenn die oberre answer Function ausgeführt wird!
+    document.getElementById('button-3').disabled = false; // dieser Zeile macht das Button anklickbar, wenn die oberre answer Function ausgeführt wird!
+    document.getElementById('button-4').disabled = false; // dieser Zeile macht das Button anklickbar, wenn die oberre answer Function ausgeführt wird!
     resetAnswerButton();
     showQuestion();
 }

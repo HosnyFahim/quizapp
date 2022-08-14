@@ -11,7 +11,7 @@
         flex-direction: column;
     }
     .container {
-        min-height: 90vh;
+        min-height: 80vh;
     }
     .bg-gray {
         background-color: #1A699E;
@@ -41,16 +41,22 @@
         padding: 0 !important;
     }
     .nav-content img {
-        width: 100px;
+        width: 80px;
     }
     .bg-gray {
-        height: 165px !important;
+        height: 126px !important;
+    }
+    .categories {
+        margin-top: 0;
     }
 }
 
 @media (max-width: 520px) {
     .container {
         min-height: 66vh;
+    }
+    .nav-content img {
+        width: 70px;
     }
 }
 
@@ -62,9 +68,9 @@
 
 @media (max-width: 400px) {
     .nav-content img {
-        width: 80px;
+        width: 70px;
     }
     .bg-gray {
-        height: 140px !important;
+        height: 120px !important;
     }
 }
